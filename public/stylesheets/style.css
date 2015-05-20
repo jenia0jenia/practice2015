@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.drag-n-drop {
+  border: #000 1px solid;
+}
+
+.critical {
+  background: #dd3c14;
+}
+
+.high {
+  background: #dd8107;
+}
+
+.medium {
+  background: #c8dd2f;
+}
+
+.low {
+  background: #E5E1EA;
+}
+
+.not-select {
+  -ms-user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:-moz-none;
+}

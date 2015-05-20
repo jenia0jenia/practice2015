@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="/stylesheets/style.css"/>
+</head>
+<body>
+<div class="container">
+<div class="row"  align="center"><h1>HEAD</h1></div>
+    <div class="col-md-2" border="true" align="center">
+        <h1>MY</h1>
+        <h2>FUCKING</h2>
+        <h3>MENU</h3>
+    </div>
+    <div class="col-md-10" border="true">
+        <div class="row critical">
+            <div class="col-md-3">critical</div>
+            <div class="col-md-9">
+                <div id="div1" class="drag-n-drop">Lorem ipsum dolor.</div>
+                <div id="div2" class="drag-n-drop">Eaque, sequi voluptate.</div>
+                <div id="div3" class="drag-n-drop">Eos, ullam unde!</div>
+                <div id="div4" class="drag-n-drop">Expedita, rerum sed.</div>
+            </div>
+        </div>
+        <div class="row high">
+            <div class="col-md-3">high</div>
+            <div class="col-md-9">
+                <div id="div5" class="drag-n-drop">Lorem ipsum dolor.</div>
+                <div id="div6" class="drag-n-drop">Optio, porro sunt?</div>
+                <div id="div7" class="drag-n-drop">Doloribus eligendi, labore!</div>
+                <div id="div8" class="drag-n-drop">Consequatur, rerum, sit.</div>
+            </div>
+        </div>
+        <div class="row medium">
+            <div class="col-md-3">medium</div>
+            <div class="col-md-9">
+                <div id="div9" class="drag-n-drop">Lorem ipsum dolor.</div>
+                <div id="div10" class="drag-n-drop">Debitis, suscipit voluptate!</div>
+                <div id="div11" class="drag-n-drop">Ex in, sunt?</div>
+                <div id="div12" class="drag-n-drop">Animi, fuga, ullam!</div>
+            </div>
+        </div>
+        <div class="row low">
+            <div class="col-md-3">low</div>
+            <div class="col-md-9">
+                <div id="div13" class="drag-n-drop">Lorem ipsum dolor.</div>
+                <div id="div14" class="drag-n-drop">Ducimus, eius, error?</div>
+                <div id="div15" class="drag-n-drop">Iusto laborum, placeat?</div>
+                <div id="div16" class="drag-n-drop">Odit perferendis, velit.</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    (function() {
+        var length = document.getElementsByClassName('drag-n-drop').length,
+            elem = [],
+            id;
+        for (var i = 0; i < length; i += 1) {
+            id = 'div' + (i + 1);
+            elem[id] = document.getElementById(id);
+            // 1. отследить нажатие
+            elem[id].onmousedown = function(e) {
+                var self = this;
+                var noneSelect = document.getElementsByClassName("container")[0];
+                noneSelect.setAttribute("class", "container not-select");
+                // подготовить к перемещению
+                // 2. разместить на том же месте, но в абсолютных координатах
+                this.style.position = 'fixed';
+                moveAt(e);
+                // передвинуть под координаты курсора
+                // и сдвинуть на половину ширины/высоты для центрирования
+                function moveAt(e) {
+                    self.style.left = e.pageX - self.offsetWidth / 2 + 'px';
+                    self.style.top = e.pageY - self.offsetHeight / 2 + 'px';
+                }
+                // 3, перемещать по экрану
+                document.onmousemove = function(e) {
+                    moveAt(e);
+                }
+                // 4. отследить окончание переноса
+                this.onmouseup = function() {
+                    noneSelect.setAttribute("class", "container");
+                    document.onmousemove = null;
+                    self.onmouseup = null;
+                }
+            }
+        };
+    })();
+</script>
+</html>
