@@ -1,6 +1,3 @@
-var Demos = [];
-var nDemos = 5; // количество секций приоритетов
-
 var mouseOffset = null;
 var iMouseDown = false;
 var lMouseState = false;
@@ -335,10 +332,9 @@ function mouseUp(ev) {
         curTarget.style.visibility = 'visible';
     }
     curTarget = null;
-
     dragObject = null;
-
     iMouseDown = false;
+    setClasses();
 }
 
 function mouseDown(ev) {
@@ -356,10 +352,6 @@ document.onmousedown = mouseDown;
 document.onmouseup = mouseUp;
 
 window.onload = function() {
-    for (var i = 0; i < nDemos; i++) {
-        Demos[i] = document.getElementById('Demo' + i);
-    }
-
     // Create our helper object that will show the item while dragging
     dragHelper = document.createElement('DIV');
     dragHelper.style.cssText = 'position:absolute;display:none;';
@@ -367,4 +359,31 @@ window.onload = function() {
     document.body.appendChild(dragHelper);
 
     CreateDragContainer(document.getElementById('DragContainer0'), document.getElementById('DragContainer1'), document.getElementById('DragContainer2'), document.getElementById('DragContainer3'));
+};
+
+function setClasses() {
+    var cObj, cLen, classItem;
+    for (var i = 0; i < 4; i += 1) {
+        switch (i) {
+            case 0:
+                classItem = 'btn btn-danger';
+                break;
+            case 1:
+                classItem = 'btn btn-warning';
+                break;
+            case 2:
+                classItem = 'btn btn-success';
+                break;
+            case 3:
+                classItem = 'btn btn-default';
+                break;
+        }
+            cObj = document.getElementById('DragContainer' + i);
+            cLen = cObj.childNodes.length;
+            for (var j = 0; j < cObj.childNodes.length; j++) {
+                // Firefox puts in lots of #text nodes...skip these
+                if (cObj.childNodes[j].nodeName == '#text') continue;
+                cObj.childNodes[j].setAttribute('class', classItem);
+            }
+        }
 }
