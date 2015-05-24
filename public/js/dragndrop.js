@@ -359,6 +359,22 @@ window.onload = function() {
     document.body.appendChild(dragHelper);
 
     CreateDragContainer(document.getElementById('DragContainer0'), document.getElementById('DragContainer1'), document.getElementById('DragContainer2'), document.getElementById('DragContainer3'));
+    var buttonElement = document.getElementsByClassName("btn");
+    var buttonsCount = buttonElement.length;
+    for (var i = 0; i < buttonsCount; i += 1) {
+            buttonElement[i].onmouseover = onmouseover;
+            buttonElement[i].setAttribute("data-toggle", "tooltip");
+            //buttonElement[i].setAttribute("data-placement", "top");
+            buttonElement[i].setAttribute("title", "Автор запроса:\n" +
+                                                    "Дата начала:\n" +
+                                                    "Дата завершения:\n" +
+                                                    "Сложность:");
+            //buttonElement[i].tooltip();
+    }
+    function onmouseover() {
+        //alert('window');
+    }
+        //$('[data-toggle="tooltip"]').tooltip();
 };
 
 function setClasses() {

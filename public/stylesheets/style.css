@@ -51,10 +51,10 @@ a {
 }
 
 .btn {
-  display: inline-block;
   vertical-align: top;
 }
 .item-container {
+  height: 60px;
   overflow: hidden;
   overflow-x: auto;
   white-space: nowrap;

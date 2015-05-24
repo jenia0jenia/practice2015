@@ -47,7 +47,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
               <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
               <folding />
             </state>
@@ -57,7 +57,7 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="850">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
               <caret line="12" column="32" selection-start-line="12" selection-start-column="32" selection-end-line="12" selection-end-column="32" />
               <folding>
                 <element signature="e#0#48#0" expanded="false" />
@@ -66,15 +66,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dragndrop.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dragndrop.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/dragndrop.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5607" max-vertical-offset="6052">
-              <caret line="364" column="29" selection-start-line="364" selection-start-column="29" selection-end-line="364" selection-end-column="29" />
+            <state vertical-scroll-proportion="0.35279188" vertical-offset="626" max-vertical-offset="1071">
+              <caret line="367" column="32" selection-start-line="367" selection-start-column="32" selection-end-line="367" selection-end-column="32" />
               <folding>
+                <element signature="n#!!block;n#CreateDragContainer#0" expanded="false" />
                 <element signature="n#!!block;n#getPosition#0" expanded="false" />
                 <element signature="n#!!block;n#mouseCoords#0" expanded="false" />
                 <element signature="n#!!block;n#getMouseOffset#0" expanded="false" />
+                <element signature="n#!!block;n#mouseMove#0" expanded="false" />
+                <element signature="n#!!block;n#mouseUp#0" expanded="false" />
+                <element signature="n#!!block;n#mouseDown#0" expanded="false" />
+                <element signature="n#!!block;n#setClasses#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -83,18 +88,18 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-36.884617" vertical-offset="435" max-vertical-offset="1581">
-              <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1581">
+              <caret line="68" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7076167" vertical-offset="239" max-vertical-offset="663">
-              <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="561">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
               <folding>
                 <element signature="e#5#85#0" expanded="false" />
                 <element signature="e#89#110#0" expanded="false" />
@@ -105,6 +110,7 @@
                 <element signature="e#269#295#0" expanded="false" />
                 <element signature="e#423#525#0" expanded="false" />
                 <element signature="e#531#627#0" expanded="false" />
+                <element signature="e#677#759#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -122,9 +128,9 @@
         <option value="$PROJECT_DIR$/public/js/script.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/index.js" />
-        <option value="$PROJECT_DIR$/public/js/dragndrop.js" />
-        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
+        <option value="$PROJECT_DIR$/public/index.html" />
+        <option value="$PROJECT_DIR$/public/js/dragndrop.js" />
       </list>
     </option>
   </component>
@@ -189,7 +195,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
+              <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -204,6 +210,70 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deepExp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deepExp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deepExp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="deepExp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vendor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bower_components" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,7 +413,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -387,9 +457,14 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="5444" max-vertical-offset="6052">
           <caret line="364" column="29" selection-start-line="364" selection-start-column="29" selection-end-line="364" selection-end-column="29" />
           <folding>
+            <element signature="n#!!block;n#CreateDragContainer#0" expanded="false" />
             <element signature="n#!!block;n#getPosition#0" expanded="false" />
             <element signature="n#!!block;n#mouseCoords#0" expanded="false" />
             <element signature="n#!!block;n#getMouseOffset#0" expanded="false" />
+            <element signature="n#!!block;n#mouseMove#0" expanded="false" />
+            <element signature="n#!!block;n#mouseUp#0" expanded="false" />
+            <element signature="n#!!block;n#mouseDown#0" expanded="false" />
+            <element signature="n#!!block;n#setClasses#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -416,6 +491,7 @@
             <element signature="e#269#295#0" expanded="false" />
             <element signature="e#423#525#0" expanded="false" />
             <element signature="e#531#627#0" expanded="false" />
+            <element signature="e#677#759#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -452,11 +528,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/index.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="459">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="561">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+          <folding>
+            <element signature="e#5#85#0" expanded="false" />
+            <element signature="e#89#110#0" expanded="false" />
+            <element signature="e#125#154#0" expanded="false" />
+            <element signature="e#166#192#0" expanded="false" />
+            <element signature="e#200#226#0" expanded="false" />
+            <element signature="e#236#262#0" expanded="false" />
+            <element signature="e#269#295#0" expanded="false" />
+            <element signature="e#423#525#0" expanded="false" />
+            <element signature="e#531#627#0" expanded="false" />
+            <element signature="e#677#759#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -464,14 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1071">
           <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="52" max-vertical-offset="459">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -486,40 +573,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/dragndrop.js">
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5444" max-vertical-offset="6052">
-          <caret line="364" column="29" selection-start-line="364" selection-start-column="29" selection-end-line="364" selection-end-column="29" />
-          <folding>
-            <element signature="n#!!block;n#getPosition#0" expanded="false" />
-            <element signature="n#!!block;n#mouseCoords#0" expanded="false" />
-            <element signature="n#!!block;n#getMouseOffset#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.884617" vertical-offset="435" max-vertical-offset="1581">
-          <caret line="82" column="10" selection-start-line="82" selection-start-column="10" selection-end-line="82" selection-end-column="10" />
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="918" max-vertical-offset="1581">
+          <caret line="68" column="35" selection-start-line="67" selection-start-column="35" selection-end-line="68" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/style.css">
+    <entry file="file://$PROJECT_DIR$/public/js/dragndrop.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7076167" vertical-offset="239" max-vertical-offset="663">
-          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+        <state vertical-scroll-proportion="0.35279188" vertical-offset="626" max-vertical-offset="1071">
+          <caret line="367" column="32" selection-start-line="367" selection-start-column="32" selection-end-line="367" selection-end-column="32" />
           <folding>
-            <element signature="e#5#85#0" expanded="false" />
-            <element signature="e#89#110#0" expanded="false" />
-            <element signature="e#125#154#0" expanded="false" />
-            <element signature="e#166#192#0" expanded="false" />
-            <element signature="e#200#226#0" expanded="false" />
-            <element signature="e#236#262#0" expanded="false" />
-            <element signature="e#269#295#0" expanded="false" />
-            <element signature="e#423#525#0" expanded="false" />
-            <element signature="e#531#627#0" expanded="false" />
+            <element signature="n#!!block;n#CreateDragContainer#0" expanded="false" />
+            <element signature="n#!!block;n#getPosition#0" expanded="false" />
+            <element signature="n#!!block;n#mouseCoords#0" expanded="false" />
+            <element signature="n#!!block;n#getMouseOffset#0" expanded="false" />
+            <element signature="n#!!block;n#mouseMove#0" expanded="false" />
+            <element signature="n#!!block;n#mouseUp#0" expanded="false" />
+            <element signature="n#!!block;n#mouseDown#0" expanded="false" />
+            <element signature="n#!!block;n#setClasses#0" expanded="false" />
           </folding>
         </state>
       </provider>
