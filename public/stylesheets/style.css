@@ -49,3 +49,13 @@ a {
   display:none;
   position:absolute;
 }
+
+.btn {
+  display: inline-block;
+  vertical-align: top;
+}
+.item-container {
+  overflow: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
